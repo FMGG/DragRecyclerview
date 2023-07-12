@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+        <com.hangsu.dragrecyclerview.widget.DataFolder
+            android:id="@+id/i_data_folder"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:padding="15dp">
+
+            <View
+                android:id="@+id/i_data_folder_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_i_data_category_edit"
+                android:visibility="invisible"/>
+
+            <com.hangsu.dragrecyclerview.widget.DataGridLayout
+                android:id="@+id/i_data_folder_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:iDataRowCount="2"
+                app:iDataColumnCount="2"
+                app:iDataGap="8dp"
+                android:padding="8dp"
+                android:background="@drawable/bg_i_data_category_edit"
+                />
+
+            <FrameLayout
+                android:id="@+id/i_data_folder_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+        </com.hangsu.dragrecyclerview.widget.DataFolder>
+
+    </FrameLayout>
+</layout>

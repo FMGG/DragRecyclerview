@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IDataGridLayout">
+        <attr name="iDataRowCount" format="integer"/>
+        <attr name="iDataColumnCount" format="integer"/>
+        <attr name="iDataGap" format="dimension"/>
+    </declare-styleable>
+</resources>
